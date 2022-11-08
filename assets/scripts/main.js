@@ -102,7 +102,7 @@ function initFormHandler() {
     //            then save the recipes array back to localStorage
     let recipes = new Array();
     if (localStorage.getItem('recipes')!= null) {
-      let recipes = JSON.parse(localStorage.getItem('recipes'));
+      recipes = JSON.parse(localStorage.getItem('recipes'));
     }
     recipes.push(recipeObject);
     localStorage.removeItem('recipes');
